@@ -16,11 +16,11 @@
       <tr>
         <td><%= user.name %></td>
         <td><%= user.email %></td>
-     <!--    <% if user.microposts.first %>
+        <% if user.microposts.first %>
           <td><%= user.microposts.first.content %></td>
         <% else %>
           <td> No posts yet... </td>
-        <% end %> -->
+        <% end %>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
